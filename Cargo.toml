@@ -7,6 +7,7 @@ edition = "2021"
 crate-type = ["cdylib"]
 
 [dependencies]
+env_logger = "0.11"
 log = "0.4"
 rsunimrcp-sys = { git = "https://github.com/akmitrich/rsunimrcp-sys" }
 rsunimrcp_engine = { git = "https://github.com/akmitrich/rsunimrcp_engine" }
