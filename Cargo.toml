@@ -1,0 +1,13 @@
+[package]
+name = "rsunimrcp_tts"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+log = "0.4"
+rsunimrcp-sys = { git = "https://github.com/akmitrich/rsunimrcp-sys" }
+rsunimrcp_engine = { git = "https://github.com/akmitrich/rsunimrcp_engine" }
+tokio = { version = "1", features = ["fs", "io-util"] }
